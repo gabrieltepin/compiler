@@ -23,9 +23,11 @@ Then, the output to the corresponding code would be:
 ```C++
 function factorial(n: integer) : integer {
 	var result: integer;
+    result = 1;
 
-	while(result>0){
-		result = result * (result - 1);
+	while(n > 0){
+		result = result * (n - 1);
+        n = n - 1;
 	}
 
 	return result;
@@ -36,6 +38,8 @@ function factorial(n: integer) : integer {
 <td>
 
 ```txt
+input_file_name: test/simple_example
+output_file_name: output
 8 
 48 ID id=0 
 27 
@@ -51,11 +55,15 @@ function factorial(n: integer) : integer {
 19 
 10 
 20 
+48 ID id=2 
+22 
+46 INT id=0 1 
+20 
 17 
 27 
-48 ID id=2 
+48 ID id=1 
 32 
-46 INT id=0 0 
+46 INT id=1 0 
 28 
 25 
 48 ID id=2 
@@ -63,10 +71,16 @@ function factorial(n: integer) : integer {
 48 ID id=2 
 41 
 27 
-48 ID id=2 
+48 ID id=1 
 39 
-46 INT id=1 1 
+46 INT id=2 1 
 28 
+20 
+48 ID id=1 
+22 
+48 ID id=1 
+39 
+46 INT id=3 1 
 20 
 26 
 18 
