@@ -7,11 +7,11 @@ In project folder, execute:
 #### Run
 After building the application, run in project folder:
 
-`compile SCRIPT_NAME -o OUTPUT_FILE_NAME`
+`./compile SCRIPT_NAME -o OUTPUT_FILE_NAME`
 
 There are also examples already set in test folder. For a quick check to the application, execute:
 
-`compile test/simple_example -o output`
+`./compile test/simple_example -o output`
 
 Then, the output to the corresponding code would be:
 
