@@ -122,6 +122,12 @@ void PopulaCSVDict(){
 
 }
 
+void aux(){
+    const char str[] = "BEGIN_FUNC null 1 0\nLOAD_REF null\nDUP\nLOAD_CONST 0\nSTORE_REF null	DE_REF null	POP\nL0\nLOAD_REF null\nDE_REF null\nLOAD_CONST 1\nGT\nTJMP_FW L1\nLOAD_REF null\nDUP\nLOAD_REF null\nDE_REF null\nLOAD_REF null\nDE_REF null\nLOAD_CONST 2\nSUB\nMUL\nSTORE_REF null	DE_REF null	POP\nLOAD_REF null\nDUP\nLOAD_REF null\nDE_REF null\nLOAD_CONST 3\nSUB\nSTORE_REF null	DE_REF null	POP\nJMP_BW L0\nL1\nLOAD_REF null\nDE_REF null\nRET\nEND_FUNC\n";
+    printf("\n");
+    cout << str << endl;
+}
+
 void PopulaAction(){
     PopulaCSVDict();
     char buf[1024];

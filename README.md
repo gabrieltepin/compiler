@@ -1,10 +1,10 @@
-## Setup
-#### Build
+# Setup
+## Build
 In project folder, execute:
 
 `make`
 
-#### Run
+## Run
 After building the application, run in project folder:
 
 `./compile SCRIPT_NAME -o OUTPUT_FILE_NAME`
@@ -14,7 +14,7 @@ There are also examples already set in test folder. For a quick check to the app
 `./compile test/simple_example -o output`
 
 Then, the output to the corresponding code would be:
-
+#### Lexical Analysis
 
 <table>
 <tr>
@@ -93,7 +93,73 @@ output_file_name: output
 26 
 50 
 ```
+</td>
+</tr>
+</table>
 
+#### Syntactical Analysis
+
+<table>
+<tr>
+<th>Coding example </th>
+<th>Corresponding syntactical output</th>
+</tr>
+<tr>
+<td>
+
+```C++
+function factorial(n: integer) : integer {
+	var result: integer;
+    result = 1;
+
+	while(n > 0){
+		result = result * (n - 1);
+        n = n - 1;
+	}
+
+	return result;
+}
+```
+
+</td>
+<td>
+
+```txt
+BEGIN_FUNC null 1 0
+	LOAD_REF null
+	DUP
+	LOAD_CONST 0
+	STORE_REF null	DE_REF null	POP
+	L0
+	LOAD_REF null
+	DE_REF null
+	LOAD_CONST 1
+	GT
+	TJMP_FW L1
+	LOAD_REF null
+	DUP
+	LOAD_REF null
+	DE_REF null
+	LOAD_REF null
+	DE_REF null
+	LOAD_CONST 2
+	SUB
+	MUL
+	STORE_REF null	DE_REF null	POP
+	LOAD_REF null
+	DUP
+	LOAD_REF null
+	DE_REF null
+	LOAD_CONST 3
+	SUB
+	STORE_REF null	DE_REF null	POP
+	JMP_BW L0
+L1
+	LOAD_REF null
+	DE_REF null
+	RET
+END_FUNC
+```
 </td>
 </tr>
 </table>
