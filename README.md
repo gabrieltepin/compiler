@@ -1,4 +1,6 @@
 # Setup
+
+IME Compiler project developed in MacOsX environment.
 ## Build
 In project folder, execute:
 
@@ -9,7 +11,7 @@ After building the application, run in project folder:
 
 `./compile SCRIPT_NAME -o OUTPUT_FILE_NAME`
 
-There are also examples already set in test folder. For a quick check to the application, execute:
+There are also examples already set in test folder. For a quick check, execute in project folder:
 
 `./compile test/simple_example -o output`
 
