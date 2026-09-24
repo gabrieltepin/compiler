@@ -1,6 +1,5 @@
 # Setup
 
-Compiler project developed in MacOsX environment.
 ## Build
 In project folder, execute:
 
