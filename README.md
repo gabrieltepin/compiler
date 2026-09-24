@@ -1,6 +1,6 @@
 # Setup
 
-IME Compiler project developed in MacOsX environment.
+Compiler project developed in MacOsX environment.
 ## Build
 In project folder, execute:
 
